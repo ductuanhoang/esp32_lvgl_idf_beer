@@ -1,8 +1,10 @@
 
 
 set(pri_req 
-    cmd_nvs
     driver
+    lvgl
+    lvgl_esp32_drivers
+    ui
 )
 
 

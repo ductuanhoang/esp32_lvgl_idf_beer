@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "disp_driver.h": "c",
+        "esp_lcd_backlight.h": "c",
+        "lvgl_spi_conf.h": "c",
+        "lvgl.h": "c",
+        "ui_helpers.h": "c",
+        "i2c_manager.h": "c",
+        "lv_anim_timeline.h": "c",
+        "ui.h": "c",
+        "lv_demo_music_main.h": "c",
+        "sdkconfig.h": "c",
+        "xstring": "c",
+        "vector": "c",
+        "xutility": "c"
+    },
+    "idf.adapterTargetName": "esp32s3"
+}

@@ -1,0 +1,73 @@
+[1/13] Linking C static library esp-idf\ui\libui.a
+[2/13] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\2.upwork\91.Beer\esp32_beer\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/2.upwork/91.Beer/esp32_beer/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[3/11] Building C object esp-idf/lvgl_esp32_drivers/CMakeFiles/__idf_lvgl_esp32_drivers.dir/lvgl_tft/ili9488.c.obj
+[4/11] Linking C static library esp-idf\lvgl_esp32_drivers\liblvgl_esp32_drivers.a
+[5/11] Linking C static library esp-idf\main\libmain.a
+[6/11] Generating ld/sections.ld
+[7/11] Building C object CMakeFiles/uart_events.elf.dir/project_elf_src_esp32s3.c.obj
+[8/11] Linking CXX executable uart_events.elf
+[9/11] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/2.upwork/91.Beer/esp32_beer/build/uart_events.bin
+[10/11] cmd.exe /C "cd /D D:\2.upwork\91.Beer\esp32_beer\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/2.upwork/91.Beer/esp32_beer/build/partition_table/partition-table.bin D:/2.upwork/91.Beer/esp32_beer/build/uart_events.bin"
+uart_events.bin binary size 0xb8f30 bytes. Smallest app partition is 0x100000 bytes. 0x470d0 bytes (28%) free.
+[10/11] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=haesptool.py --chip esp32s3 -p COM9 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 uart_events.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM9
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.1)
+Features: WiFi, BLE, Embedded PSRAM 2MB (AP_3v3)
+Crystal is 40MHz
+MAC: 68:b6:b3:29:92:74
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000c8fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 21072 bytes to 13082...
+Writing at 0x00000000... (100 %)
+Wrote 21072 bytes (13082 compressed) at 0x00000000 in 0.7 seconds (effective 247.5 kbit/s)...
+Hash of data verified.
+Compressed 757552 bytes to 369556...
+Writing at 0x00010000... (4 %)
+Writing at 0x0001ea3e... (8 %)
+Writing at 0x0002e466... (13 %)
+Writing at 0x0003d11a... (17 %)
+Writing at 0x00048ac2... (21 %)
+Writing at 0x0004f9a7... (26 %)
+Writing at 0x00057c1d... (30 %)
+Writing at 0x00060b8a... (34 %)
+Writing at 0x0006a2a8... (39 %)
+Writing at 0x00073fdc... (43 %)
+Writing at 0x0007a4bd... (47 %)
+Writing at 0x0008065c... (52 %)
+Writing at 0x00086140... (56 %)
+Writing at 0x0008c208... (60 %)
+Writing at 0x00091cef... (65 %)
+Writing at 0x000977e9... (69 %)
+Writing at 0x0009d743... (73 %)
+Writing at 0x000a36cf... (78 %)
+Writing at 0x000a9954... (82 %)
+Writing at 0x000b11c8... (86 %)
+Writing at 0x000b8eea... (91 %)
+Writing at 0x000bec73... (95 %)
+Writing at 0x000c56a5... (100 %)
+Wrote 757552 bytes (369556 compressed) at 0x00010000 in 9.3 seconds (effective 648.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 523.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+rd_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/2.upwork/91.Beer/esp32_beer/build -P C:/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/run_serial_tool.cmake"
